@@ -172,7 +172,7 @@ st.markdown("""
 def load_my_dl_model():
     try:
         # Assuming the model file 'best_ham.keras' is in the 'model/' folder relative to this script.
-        model = tf.keras.models.load_model('ham10000.keras')
+        model = tf.keras.models.load_model('best_ham.keras')
         return model
     except Exception as e:
         st.error(f"ไม่สามารถโหลดโมเดลได้: {e}") # Cannot load model
